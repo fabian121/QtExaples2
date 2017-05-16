@@ -21,6 +21,6 @@ void MainWindow::on_btnSayHello_clicked()
 
 void MainWindow::on_btnClean_clicked()
 {
-    ui->txtName->setPlainText("");
-    ui->txtResult->setPlainText("");
+    ui->txtName->setPlainText("--");
+    ui->txtResult->setPlainText("--");
 }
