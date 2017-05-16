@@ -18,6 +18,8 @@ public:
 private slots:
     void on_btnSayHello_clicked();
 
+    void on_btnClean_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

@@ -65,9 +65,9 @@
    <widget class="QPushButton" name="btnSayHello">
     <property name="geometry">
      <rect>
-      <x>228</x>
-      <y>226</y>
-      <width>261</width>
+      <x>60</x>
+      <y>230</y>
+      <width>291</width>
       <height>51</height>
      </rect>
     </property>
@@ -78,6 +78,24 @@
     </property>
     <property name="text">
      <string>Say Hello!</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnClean">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>230</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Clean fields</string>
     </property>
    </widget>
   </widget>
