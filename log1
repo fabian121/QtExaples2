@@ -1,0 +1,69 @@
+[1mdiff --git a/mainwindow.cpp b/mainwindow.cpp[m
+[1mindex 9bb4137..0685485 100644[m
+[1m--- a/mainwindow.cpp[m
+[1m+++ b/mainwindow.cpp[m
+[36m@@ -18,3 +18,9 @@[m [mvoid MainWindow::on_btnSayHello_clicked()[m
+     QString name = ui->txtName->toPlainText();[m
+     ui->txtResult->setPlainText("Hello World " + name);[m
+ }[m
+[32m+[m
+[32m+[m[32mvoid MainWindow::on_btnClean_clicked()[m
+[32m+[m[32m{[m
+[32m+[m[32m    ui->txtName->setPlainText("");[m
+[32m+[m[32m    ui->txtResult->setPlainText("");[m
+[32m+[m[32m}[m
+[1mdiff --git a/mainwindow.h b/mainwindow.h[m
+[1mindex 2a9b8a4..5b14f9f 100644[m
+[1m--- a/mainwindow.h[m
+[1m+++ b/mainwindow.h[m
+[36m@@ -18,6 +18,8 @@[m [mpublic:[m
+ private slots:[m
+     void on_btnSayHello_clicked();[m
+ [m
+[32m+[m[32m    void on_btnClean_clicked();[m
+[32m+[m
+ private:[m
+     Ui::MainWindow *ui;[m
+ };[m
+[1mdiff --git a/mainwindow.ui b/mainwindow.ui[m
+[1mindex e9a9f4b..23c7bcb 100644[m
+[1m--- a/mainwindow.ui[m
+[1m+++ b/mainwindow.ui[m
+[36m@@ -65,9 +65,9 @@[m
+    <widget class="QPushButton" name="btnSayHello">[m
+     <property name="geometry">[m
+      <rect>[m
+[31m-      <x>228</x>[m
+[31m-      <y>226</y>[m
+[31m-      <width>261</width>[m
+[32m+[m[32m      <x>60</x>[m
+[32m+[m[32m      <y>230</y>[m
+[32m+[m[32m      <width>291</width>[m
+       <height>51</height>[m
+      </rect>[m
+     </property>[m
+[36m@@ -80,6 +80,24 @@[m
+      <string>Say Hello!</string>[m
+     </property>[m
+    </widget>[m
+[32m+[m[32m   <widget class="QPushButton" name="btnClean">[m
+[32m+[m[32m    <property name="geometry">[m
+[32m+[m[32m     <rect>[m
+[32m+[m[32m      <x>370</x>[m
+[32m+[m[32m      <y>230</y>[m
+[32m+[m[32m      <width>301</width>[m
+[32m+[m[32m      <height>51</height>[m
+[32m+[m[32m     </rect>[m
+[32m+[m[32m    </property>[m
+[32m+[m[32m    <property name="font">[m
+[32m+[m[32m     <font>[m
+[32m+[m[32m      <pointsize>22</pointsize>[m
+[32m+[m[32m     </font>[m
+[32m+[m[32m    </property>[m
+[32m+[m[32m    <property name="text">[m
+[32m+[m[32m     <string>Clean fields</string>[m
+[32m+[m[32m    </property>[m
+[32m+[m[32m   </widget>[m
+   </widget>[m
+   <widget class="QMenuBar" name="menuBar">[m
+    <property name="geometry">[m
